@@ -178,7 +178,7 @@
 ## 🎨 หน้าจอระบบจริง (Prototypes)
 
 ![หน้าแรกของระบบ](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Home.png)
-*ภาพที่ 8: ส่วนติดต่อผู้ใช้งานหน้าหลัก (Home Page)*
+*ภาพที่ 8: หน้าหลัก (Home Page)*
 
 ![หน้าเข้าสู่ระบบ](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Login.png)
 *ภาพที่ 9: หน้าเข้าสู่ระบบ (Login Page)*
