@@ -140,7 +140,7 @@
 ---
 ![Use case Diagram](https://github.com/nitipatphu/chick/blob/main/Diagram/Use%20Case.drawio.png)
 ![Class Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Class.drawio.png)
-![sequence Diagram]([https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/sequence diagram.drawio.png](https://github.com/nitipatphu/chick/blob/main/Diagram/sequence%20diagram.drawio.png))
+![sequence Diagram](https://github.com/nitipatphu/chick/blob/main/Diagram/sq.png)
 ---
 
 ## 👥 ผู้จัดทำ
