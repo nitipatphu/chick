@@ -155,7 +155,7 @@
 ![หน้าหลักและรายการสินค้า](https://raw.githubusercontent.com/nitipatphu/chick/main/Wireframe/IMG_2344.JPG)
 *ภาพที่ 1: หน้าหลัก และแสดงรายการอุปกรณ์กีฬา*
 
-![รายละเอียดสินค้า](https://raw.githubusercontent.com/nitipatphu/chick/main/Wireframe/IMG_2345.JPG)
+![รายการสินค้า](https://raw.githubusercontent.com/nitipatphu/chick/main/Wireframe/IMG_2345.JPG)
 *ภาพที่ 2: รายการสินค้า*
 
 ![รายละเอียดสินค้า](https://raw.githubusercontent.com/nitipatphu/chick/main/Wireframe/IMG_2346.JPG)
@@ -172,6 +172,25 @@
 
 ![แดชบอร์ดและรายงานสรุป](https://raw.githubusercontent.com/nitipatphu/chick/main/Wireframe/IMG_2350.JPG)
 *ภาพที่ 7: หน้าแดชบอร์ดแสดงรายงานสถิติและยอดขายสำหรับ Administrator*
+
+---
+
+## 🎨 หน้าจอระบบจริง (Prototypes)
+
+![หน้าแรกของระบบ](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Home.png)
+*ภาพที่ 8: ส่วนติดต่อผู้ใช้งานหน้าหลัก (Home Page)*
+
+![หน้าเข้าสู่ระบบ](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Login.png)
+*ภาพที่ 9: หน้าเข้าสู่ระบบ (Login Page)*
+
+![หน้าตะกร้าสินค้า](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Cart.png)
+*ภาพที่ 10: หน้าตะกร้าสินค้าและการคำนวณราคาก่อนสั่งซื้อ (Cart Page)*
+
+![หน้าชำระเงิน](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/Payment.png)
+*ภาพที่ 11: หน้าต่างเลือกวิธีการชำระเงินและตรวจสอบข้อมูลจัดส่ง (Payment Page)*
+
+![หน้าแสดงรายละเอียดคำสั่งซื้อ](https://raw.githubusercontent.com/nitipatphu/chick/main/Prototype/DetailOrder.png)
+*ภาพที่ 12: หน้าจอแสดงรายละเอียดและสถานะของคำสั่งซื้อ (Order Detail Page)*
 
 ---
 
