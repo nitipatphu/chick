@@ -138,7 +138,9 @@
 
 
 ---
+![Use case Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Use case.drawio.png)
 ![Class Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Class.drawio.png)
+![sequence Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/sequence diagram.drawio.png)
 ---
 
 ## 👥 ผู้จัดทำ
