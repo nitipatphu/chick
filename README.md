@@ -140,7 +140,7 @@
 ---
 Class Diagram
 
-https://github.com/nitipatphu/chick/blob/main/Diagram/Class.drawio.png
+![img alt]https://github.com/nitipatphu/chick/blob/main/Diagram/Class.drawio.png
 ---
 
 ## 👥 ผู้จัดทำ
