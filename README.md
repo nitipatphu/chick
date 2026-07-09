@@ -138,9 +138,7 @@
 
 
 ---
-Class Diagram
-
-![img alt]https://github.com/nitipatphu/chick/blob/main/Diagram/Class.drawio.png
+![Class Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Class.drawio.png)
 ---
 
 ## 👥 ผู้จัดทำ
