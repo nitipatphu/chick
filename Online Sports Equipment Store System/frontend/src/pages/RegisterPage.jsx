@@ -31,9 +31,7 @@ export default function RegisterPage() {
     try {
       const { confirmPassword, ...userData } = formData;
       await register(userData);
-      // ✅ ไปหน้า Home ก่อน
       navigate('/');
-      // ✅ แล้วค่อย reload หลังจากไปหน้า Home
       setTimeout(() => {
         window.location.reload();
       }, 100);
