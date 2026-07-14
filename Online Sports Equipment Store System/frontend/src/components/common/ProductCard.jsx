@@ -50,7 +50,7 @@ const ProductCard = ({ product }) => {
     }
   };
 
-  // ✅ เปลี่ยนจาก via.placeholder.com เป็น UI แสดงข้อความแทน
+
   const imageUrl = product.imageUrl || '';
 
   return (
