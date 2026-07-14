@@ -1,0 +1,569 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "customer1",
+      "password": "password123",
+      "email": "customer@mail.com",
+      "fullName": "สมชาย ลูกค้า",
+      "phone": "081-234-5678",
+      "role": "customer",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": 2,
+      "username": "staff1",
+      "password": "password123",
+      "email": "staff@shop.com",
+      "fullName": "นางสาว พนักงาน",
+      "phone": "082-345-6789",
+      "role": "staff",
+      "createdAt": "2026-01-02"
+    },
+    {
+      "id": 3,
+      "username": "admin",
+      "password": "password123",
+      "email": "admin@shop.com",
+      "fullName": "นาย ผู้ดูแลระบบ",
+      "phone": "083-456-7890",
+      "role": "administrator",
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": 1784046554992,
+      "username": "test",
+      "password": "password123",
+      "email": "sdd@email.com",
+      "fullName": "yyy",
+      "phone": "083-456-7890",
+      "role": "customer",
+      "createdAt": "2026-07-14",
+      "updatedAt": "2026-07-14T16:42:55.144Z"
+    },
+    {
+      "id": 1784047484506,
+      "username": "cu1",
+      "password": "password123",
+      "email": "TestB@gmail.com",
+      "fullName": "1",
+      "phone": "1",
+      "role": "customer",
+      "createdAt": "2026-07-14",
+      "updatedAt": null
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "userId": 1,
+      "fullName": "สมชาย ลูกค้า",
+      "phone": "081-234-5678",
+      "address": "123/45 ถนนสุขุมวิท",
+      "district": "คลองเตย",
+      "city": "คลองเตย",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10110",
+      "isDefault": true,
+      "createdAt": "2026-01-15"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "fullName": "สมชาย ลูกค้า",
+      "phone": "089-999-9999",
+      "address": "456/78 ถนนรัชดาภิเษก",
+      "district": "ห้วยขวาง",
+      "city": "ห้วยขวาง",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10310",
+      "isDefault": false,
+      "createdAt": "2026-02-20"
+    },
+    {
+      "id": 1784046219565,
+      "userId": 1,
+      "fullName": "สมชาย ลูกค้า",
+      "phone": "0",
+      "address": "0",
+      "district": "t",
+      "city": "t",
+      "province": "t",
+      "postalCode": "10",
+      "isDefault": false,
+      "createdAt": "2026-07-14"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "รองเท้า",
+      "icon": "👟"
+    },
+    {
+      "id": 2,
+      "name": "ฟุตบอล",
+      "icon": "⚽"
+    },
+    {
+      "id": 3,
+      "name": "บาสเกตบอล",
+      "icon": "🏀"
+    },
+    {
+      "id": 4,
+      "name": "เสื้อผ้า",
+      "icon": "👕"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro Max",
+      "description": "จอ 6.7 นิ้ว Super Retina XDR, ชิป A17 Pro, กล้อง 48MP",
+      "price": 42900,
+      "categoryId": 1,
+      "stock": 16,
+      "imageUrl": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300",
+      "colors": [
+        "ดำ",
+        "ขาว",
+        "ทอง"
+      ],
+      "colorImages": {
+        "ดำ": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300",
+        "ขาว": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&auto=format&fit=crop&q=80",
+        "ทอง": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&auto=format&fit=crop&q=80"
+      },
+      "sizes": [
+        "128GB",
+        "256GB",
+        "512GB"
+      ],
+      "details": {
+        "material": "กระจกกไทเทเนียม",
+        "features": "กันน้ำ, กล้อง 48MP, ชิป A17 Pro",
+        "usage": "ใช้งานทั่วไป ถ่ายภาพ เล่นเกม"
+      },
+      "createdAt": "2026-01-10",
+      "updatedAt": "2026-07-14T21:33:18.469Z"
+    },
+    {
+      "id": 2,
+      "name": "AeroFly Marathon Pro",
+      "description": "รองเท้าวิ่งระดับโปร วัสดุน้ำหนักเบา ระบายอากาศดีเยี่ยม",
+      "price": 3290,
+      "categoryId": 1,
+      "stock": 20,
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300",
+      "colors": [
+        "ดำ-แดง",
+        "ขาว-น้ำเงิน",
+        "เทา-ส้ม"
+      ],
+      "colorImages": {
+        "ดำ-แดง": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300",
+        "ขาว-น้ำเงิน": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&auto=format&fit=crop&q=80",
+        "เทา-ส้ม": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&auto=format&fit=crop&q=80"
+      },
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "details": {
+        "material": "ผ้าตาข่ายระบายอากาศและโฟม EVA น้ำหนักเบา",
+        "features": "พื้นรองเท้าชั้นแรงกระแทก เหมาะสำหรับการวิ่งระยะไกล",
+        "usage": "สวมใส่สำหรับวิ่งหรือออกกำลังกายทั่วไป"
+      },
+      "createdAt": "2026-01-12",
+      "updatedAt": null
+    },
+    {
+      "id": 3,
+      "name": "Pro Match Evo",
+      "description": "รองเท้าฟุตบอลคุณภาพสูง พื้นรองเท้าหนังสังเคราะห์",
+      "price": 790,
+      "categoryId": 2,
+      "stock": 12,
+      "imageUrl": "https://images.unsplash.com/photo-1577472844445-f3f2d0b0a4b1?w=300",
+      "colors": [
+        "ดำ",
+        "ขาว",
+        "แดง"
+      ],
+      "colorImages": {
+        "ดำ": "https://images.unsplash.com/photo-1577472844445-f3f2d0b0a4b1?w=300",
+        "ขาว": "https://images.unsplash.com/photo-1577472844445-f3f2d0b0a4b1?w=300&auto=format&fit=crop&q=80",
+        "แดง": "https://images.unsplash.com/photo-1577472844445-f3f2d0b0a4b1?w=300&auto=format&fit=crop&q=80"
+      },
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "details": {
+        "material": "หนังสังเคราะห์และตาข่าย",
+        "features": "พื้นกันลื่น น้ำหนักเบา",
+        "usage": "สำหรับเล่นฟุตบอล"
+      },
+      "createdAt": "2026-01-15",
+      "updatedAt": null
+    },
+    {
+      "id": 4,
+      "name": "Titanium Shorts",
+      "description": "กางเกงขาสั้นออกกำลังกาย เนื้อผ้าเบาสบาย กันเหงื่อ",
+      "price": 590,
+      "categoryId": 4,
+      "stock": 30,
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300",
+      "colors": [
+        "ดำ",
+        "เทา",
+        "น้ำเงิน"
+      ],
+      "colorImages": {
+        "ดำ": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300",
+        "เทา": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&auto=format&fit=crop&q=80",
+        "น้ำเงิน": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&auto=format&fit=crop&q=80"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "details": {
+        "material": "ผ้าโพลีเอสเตอร์ กันเหงื่อ",
+        "features": "น้ำหนักเบา ระบายอากาศดี",
+        "usage": "สำหรับออกกำลังกาย วิ่ง หรือเล่นกีฬา"
+      },
+      "createdAt": "2026-01-18",
+      "updatedAt": null
+    },
+    {
+      "id": 5,
+      "name": "PowerLift Core",
+      "description": "เข็มขัดยกน้ำหนัก ป้องกันการบาดเจ็บ เหมาะสำหรับเวทเทรนนิ่ง",
+      "price": 450,
+      "categoryId": 4,
+      "stock": 25,
+      "imageUrl": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=300",
+      "colors": [
+        "ดำ",
+        "แดง"
+      ],
+      "colorImages": {
+        "ดำ": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=300",
+        "แดง": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=300&auto=format&fit=crop&q=80"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "details": {
+        "material": "หนังแท้และเข็มขัดโลหะ",
+        "features": "ทนทาน รัดแน่น ป้องกันการบาดเจ็บ",
+        "usage": "สำหรับยกน้ำหนักและเวทเทรนนิ่ง"
+      },
+      "createdAt": "2026-01-20",
+      "updatedAt": null
+    }
+  ],
+  "cart": [
+    {
+      "id": 1784065236714,
+      "userId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "color": "",
+      "size": "",
+      "price": 42900,
+      "name": "iPhone 15 Pro Max",
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300",
+      "addedAt": "2026-07-14T21:40:36.687Z"
+    },
+    {
+      "id": 1784065334393,
+      "userId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "color": "",
+      "size": "",
+      "price": 42900,
+      "name": "iPhone 15 Pro Max",
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300",
+      "addedAt": "2026-07-14T21:42:13.755Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1784044702599,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "pending",
+      "shippingAddress": "0",
+      "paymentMethod": "promptpay",
+      "note": "",
+      "createdAt": "2026-07-14T15:58:21.640Z"
+    },
+    {
+      "id": 1784057700053,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 6580,
+      "status": "pending",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "promptpay",
+      "note": "",
+      "createdAt": "2026-07-14T19:34:59.820Z"
+    },
+    {
+      "id": 1784057783850,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "pending",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "promptpay",
+      "note": "",
+      "createdAt": "2026-07-14T19:36:23.710Z"
+    },
+    {
+      "id": 1784057969094,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "pending",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "promptpay",
+      "note": "",
+      "createdAt": "2026-07-14T19:39:28.696Z",
+      "slipImage": "data:image/jpeg;base64,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",
+      "paymentConfirmed": false,
+      "updatedAt": "2026-07-14T19:40:09.291Z"
+    },
+    {
+      "id": 1784058332739,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "pending",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "promptpay",
+      "note": "",
+      "createdAt": "2026-07-14T19:45:32.667Z",
+      "slipImage": "data:image/jpeg;base64,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",
+      "paymentConfirmed": false,
+      "updatedAt": "2026-07-14T19:45:36.445Z"
+    },
+    {
+      "id": 1784058441348,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "pending",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "cod",
+      "note": "",
+      "createdAt": "2026-07-14T19:47:21.027Z"
+    },
+    {
+      "id": 1784058583746,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "shipped",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "cod",
+      "note": "",
+      "createdAt": "2026-07-14T19:49:43.590Z",
+      "updatedAt": "2026-07-14T20:53:22.667Z"
+    },
+    {
+      "id": 1784058605420,
+      "userId": 1,
+      "orderDate": "2026-07-14",
+      "totalAmount": 42900,
+      "status": "processing",
+      "shippingAddress": "123/45 ถนนสุขุมวิท, คลองเตย, คลองเตย, กรุงเทพมหานคร 10110",
+      "paymentMethod": "cod",
+      "note": "",
+      "createdAt": "2026-07-14T19:50:04.816Z",
+      "updatedAt": "2026-07-14T20:53:10.941Z"
+    }
+  ],
+  "orderItems": [
+    {
+      "id": 1784044702445,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784044702599
+    },
+    {
+      "id": 1784057699943,
+      "productId": 2,
+      "quantity": 1,
+      "price": 3290,
+      "orderId": 1784057700053
+    },
+    {
+      "id": 1784057700560,
+      "productId": 2,
+      "quantity": 1,
+      "price": 3290,
+      "orderId": 1784057700053
+    },
+    {
+      "id": 1784057783934,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784057783850
+    },
+    {
+      "id": 1784057969616,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784057969094
+    },
+    {
+      "id": 1784058333178,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784058332739
+    },
+    {
+      "id": 1784058441559,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784058441348
+    },
+    {
+      "id": 1784058584083,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784058583746
+    },
+    {
+      "id": 1784058605718,
+      "productId": 1,
+      "quantity": 1,
+      "price": 42900,
+      "orderId": 1784058605420
+    }
+  ],
+  "inventoryLogs": [
+    {
+      "id": 1784044701999,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784044702599",
+      "timestamp": "2026-07-14T15:58:21.640Z"
+    },
+    {
+      "id": 1784057699941,
+      "productId": 2,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784057700053",
+      "timestamp": "2026-07-14T19:34:59.820Z"
+    },
+    {
+      "id": 1784057699900,
+      "productId": 2,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784057700053",
+      "timestamp": "2026-07-14T19:34:59.820Z"
+    },
+    {
+      "id": 1784057784312,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784057783850",
+      "timestamp": "2026-07-14T19:36:23.710Z"
+    },
+    {
+      "id": 1784057969414,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784057969094",
+      "timestamp": "2026-07-14T19:39:28.696Z"
+    },
+    {
+      "id": 1784058332867,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784058332739",
+      "timestamp": "2026-07-14T19:45:32.667Z"
+    },
+    {
+      "id": 1784058441322,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784058441348",
+      "timestamp": "2026-07-14T19:47:21.027Z"
+    },
+    {
+      "id": 1784058583660,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784058583746",
+      "timestamp": "2026-07-14T19:49:43.591Z"
+    },
+    {
+      "id": 1784058605248,
+      "productId": 1,
+      "change": -1,
+      "reason": "คำสั่งซื้อ #1784058605420",
+      "timestamp": "2026-07-14T19:50:04.816Z"
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "key": "taxRate",
+      "value": "7",
+      "description": "อัตราภาษีมูลค่าเพิ่ม (%)"
+    },
+    {
+      "id": 2,
+      "key": "shippingFee",
+      "value": "50",
+      "description": "ค่าจัดส่ง (บาท)"
+    },
+    {
+      "id": 3,
+      "key": "bankName",
+      "value": "ธนาคารกสิกรไทย",
+      "description": "ชื่อบัญชีธนาคาร"
+    },
+    {
+      "id": 4,
+      "key": "bankAccountName",
+      "value": "ร้าน SPORTSGEAR",
+      "description": "ชื่อบัญชี"
+    },
+    {
+      "id": 5,
+      "key": "bankAccountNumber",
+      "value": "012-3-45678-9",
+      "description": "เลขบัญชี"
+    }
+  ]
+}
