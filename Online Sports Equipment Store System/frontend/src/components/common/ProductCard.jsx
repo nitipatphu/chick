@@ -9,7 +9,6 @@ const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
   const { isAuthenticated } = useAuth();
 
-  // SweetAlert2 helpers
   const showAlert = (title, message, type = 'success') => {
     return Swal.fire({
       title: title,
@@ -51,21 +50,39 @@ const ProductCard = ({ product }) => {
     }
   };
 
-  const imageUrl = product.imageUrl || 'https://via.placeholder.com/300x300?text=No+Image';
+  // ✅ เปลี่ยนจาก via.placeholder.com เป็น UI แสดงข้อความแทน
+  const imageUrl = product.imageUrl || '';
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
       <Link to={`/product/${product.id}`}>
         <div className="relative aspect-[4/5] overflow-hidden bg-gray-200">
-          <img 
-            src={imageUrl}
-            alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = 'https://via.placeholder.com/300x300?text=No+Image';
-            }}
-          />
+          {imageUrl ? (
+            <img 
+              src={imageUrl}
+              alt={product.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.style.display = 'none';
+                e.target.parentElement.innerHTML = `
+                  <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                    <div class="text-center">
+                      <div class="text-4xl mb-2">📷</div>
+                      <p>ไม่มีรูปภาพ</p>
+                    </div>
+                  </div>
+                `;
+              }}
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400">
+              <div className="text-center">
+                <div className="text-4xl mb-2">📷</div>
+                <p className="text-sm">ไม่มีรูปภาพ</p>
+              </div>
+            </div>
+          )}
           {product.stock === 0 && (
             <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
               สินค้าหมด
