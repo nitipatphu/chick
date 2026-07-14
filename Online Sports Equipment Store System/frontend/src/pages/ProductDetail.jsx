@@ -23,10 +23,8 @@ export default function ProductDetail() {
         setLoading(true);
         const data = await productService.getById(id);
         setProduct(data);
-
         if (data.colors && data.colors.length > 0) {
           setSelectedColor(data.colors[0]);
-
           if (data.colorImages && data.colorImages[data.colors[0]]) {
             setCurrentImage(data.colorImages[data.colors[0]]);
           } else {
@@ -47,7 +45,6 @@ export default function ProductDetail() {
     };
     fetchProduct();
   }, [id, navigate]);
-
 
   const handleColorChange = (color) => {
     setSelectedColor(color);
@@ -118,7 +115,6 @@ export default function ProductDetail() {
     );
   }
 
-
   const colorMap = {
     'ดำ': 'bg-gray-900',
     'ขาว': 'bg-gray-100',
@@ -134,7 +130,6 @@ export default function ProductDetail() {
   return (
     <div className="min-h-screen bg-sports-dark text-white pt-20 pb-20">
       <div className="container">
-
         <div className="text-sm text-gray-400 mb-6">
           <span>หน้าแรก</span>
           <span className="mx-2">›</span>
@@ -144,14 +139,35 @@ export default function ProductDetail() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-      
           <div className="aspect-square rounded-2xl overflow-hidden bg-sports-navy">
-            <img 
-              src={currentImage || product.imageUrl || 'https://via.placeholder.com/600x600?text=No+Image'} 
-              alt={`${product.name} - ${selectedColor}`}
-              className="w-full h-full object-cover transition-all duration-300"
-            />
-      
+            {currentImage || product.imageUrl ? (
+              <img 
+                src={currentImage || product.imageUrl} 
+                alt={`${product.name} - ${selectedColor}`}
+                className="w-full h-full object-cover transition-all duration-300"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.style.display = 'none';
+                  const parent = e.target.parentElement;
+                  const fallback = document.createElement('div');
+                  fallback.className = 'w-full h-full flex items-center justify-center text-gray-400';
+                  fallback.innerHTML = `
+                    <div class="text-center">
+                      <div class="text-6xl mb-4">📷</div>
+                      <p class="text-sm">ไม่มีรูปภาพ</p>
+                    </div>
+                  `;
+                  parent.appendChild(fallback);
+                }}
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-gray-400">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">📷</div>
+                  <p className="text-sm">ไม่มีรูปภาพ</p>
+                </div>
+              </div>
+            )}
             {selectedColor && (
               <div className="text-center text-sm text-gray-400 mt-2">
                 สี: {selectedColor}
@@ -159,11 +175,9 @@ export default function ProductDetail() {
             )}
           </div>
 
-    
           <div>
             <p className="text-gray-400 text-sm uppercase tracking-wider">{product.category || 'ทั่วไป'}</p>
             <h1 className="text-3xl md:text-4xl font-bold mt-2">{product.name}</h1>
-            
 
             <div className="mt-4">
               <span className="text-3xl font-bold text-sports-red">฿ {product.price?.toLocaleString()}</span>
@@ -173,7 +187,6 @@ export default function ProductDetail() {
             </div>
 
             <p className="text-gray-400 mt-4 leading-relaxed">{product.description}</p>
-
 
             {product.colors && product.colors.length > 0 && (
               <div className="mt-6">
@@ -200,7 +213,6 @@ export default function ProductDetail() {
                 </div>
               </div>
             )}
-
 
             {product.sizes && product.sizes.length > 0 && (
               <div className="mt-6">
