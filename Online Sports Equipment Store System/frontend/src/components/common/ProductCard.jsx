@@ -50,13 +50,12 @@ const ProductCard = ({ product }) => {
     }
   };
 
-
   const imageUrl = product.imageUrl || '';
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 group overflow-hidden">
       <Link to={`/product/${product.id}`}>
-        <div className="relative aspect-[4/5] overflow-hidden bg-gray-200">
+        <div className="relative aspect-[4/5] overflow-hidden bg-gray-100">
           {imageUrl ? (
             <img 
               src={imageUrl}
@@ -65,44 +64,46 @@ const ProductCard = ({ product }) => {
               onError={(e) => {
                 e.target.onerror = null;
                 e.target.style.display = 'none';
-                e.target.parentElement.innerHTML = `
-                  <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                    <div class="text-center">
-                      <div class="text-4xl mb-2">📷</div>
-                      <p>ไม่มีรูปภาพ</p>
-                    </div>
+                const parent = e.target.parentElement;
+                const fallback = document.createElement('div');
+                fallback.className = 'w-full h-full flex items-center justify-center text-gray-400';
+                fallback.innerHTML = `
+                  <div class="text-center">
+                    <div class="text-4xl mb-2">📷</div>
+                    <p class="text-sm font-medium">ไม่มีรูปภาพ</p>
                   </div>
                 `;
+                parent.appendChild(fallback);
               }}
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-400">
               <div className="text-center">
                 <div className="text-4xl mb-2">📷</div>
-                <p className="text-sm">ไม่มีรูปภาพ</p>
+                <p className="text-sm font-medium">ไม่มีรูปภาพ</p>
               </div>
             </div>
           )}
           {product.stock === 0 && (
-            <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+            <span className="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
               สินค้าหมด
             </span>
           )}
           <button
             onClick={handleAddToCart}
-            className="absolute bottom-4 right-4 w-11 h-11 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-800 opacity-0 group-hover:opacity-100 transition-all hover:bg-sports-red hover:text-white"
+            className="absolute bottom-4 right-4 w-11 h-11 bg-white rounded-full flex items-center justify-center text-gray-800 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-red-600 hover:text-white shadow-lg hover:shadow-xl"
             disabled={product.stock === 0}
           >
             <ShoppingBag size={20} />
           </button>
         </div>
         <div className="p-4">
-          <p className="text-gray-500 text-xs uppercase tracking-wider">{product.category || 'ทั่วไป'}</p>
-          <h3 className="font-semibold text-lg hover:text-sports-red transition">{product.name}</h3>
-          <div className="flex items-center gap-3 mt-1">
-            <span className="text-xl font-bold text-sports-red">฿ {product.price?.toLocaleString()}</span>
+          <p className="text-gray-500 text-xs uppercase tracking-wider font-medium">{product.category || 'ทั่วไป'}</p>
+          <h3 className="font-bold text-lg text-gray-900 hover:text-red-600 transition line-clamp-1">{product.name}</h3>
+          <div className="flex items-center gap-3 mt-2">
+            <span className="text-xl font-bold text-red-600">฿ {product.price?.toLocaleString()}</span>
             {product.oldPrice && (
-              <span className="text-gray-500 line-through text-sm">฿ {product.oldPrice.toLocaleString()}</span>
+              <span className="text-gray-400 line-through text-sm">฿ {product.oldPrice.toLocaleString()}</span>
             )}
           </div>
         </div>
