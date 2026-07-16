@@ -73,7 +73,7 @@
 | หมวดหมู่ | เทคโนโลยีที่ใช้ |
 |---------|----------|
 | **Frontend** | React, Tailwind CSS, Vite Axios SweetAlet2 Lucide |
-| **Backend** | Node.js, Express JWT BcryJS Cors Dontenv nodemon | 
+| **Backend** | Node.js, Express JWT  Dontenv nodemon | 
 | **Database** | JSON File (`db.json` เก็บข้อมูลจำลองฐานข้อมูลให้อ่านเขียนได้ไว) |
 | **Version Control** | GitHub |
 
