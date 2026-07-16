@@ -134,7 +134,7 @@
 ## 📐 แผนภาพโครงสร้างระบบ (System Diagrams)
 
 ### Use Case Diagram
-![Use Case Diagram]([https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Use%20Case.drawio.png](https://github.com/nitipatphu/chick/blob/main/Diagram/Use%20Case.png))
+![Use Case Diagram](https://github.com/nitipatphu/chick/blob/main/Diagram/Use%20Case.png)
 
 ### Class Diagram
 ![Class Diagram](https://raw.githubusercontent.com/nitipatphu/chick/main/Diagram/Class.png)
